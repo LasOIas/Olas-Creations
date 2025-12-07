@@ -2,16 +2,27 @@ import Link from 'next/link'
 
 export default function Nav() {
   return (
-    <nav className="w-full bg-white/90 backdrop-blur sticky top-0 z-30 border-b">
-      <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="text-xl font-semibold text-farmBrown">Olas Farm</Link>
-        <div className="space-x-4 hidden sm:flex">
-          <Link href="/products" className="text-sm hover:text-farmGreen">Products</Link>
-          <Link href="/about" className="text-sm hover:text-farmGreen">About</Link>
-          <Link href="/contact" className="text-sm hover:text-farmGreen">Contact</Link>
+    <nav className="w-full bg-white/95 backdrop-blur sticky top-0 z-30 border-b">
+      <div className="container flex items-center justify-between py-4">
+        <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-[url('https://images.unsplash.com/photo-1514539079130-25950c84f2d6?w=200&q=80&auto=format&fit=crop')] bg-cover bg-center shadow-sm" />
+            <div>
+              <div className="text-lg font-semibold text-[var(--farmBrown)]">Olas Farm</div>
+              <div className="text-xs text-[var(--muted)]">Fresh local eggs</div>
+            </div>
+          </Link>
         </div>
-        <div className="sm:hidden">
-          <Link href="/products" className="text-sm bg-farmGreen text-white px-3 py-1 rounded">View Eggs</Link>
+
+        <div className="hidden md:flex items-center gap-6">
+          <Link href="/products" className="text-sm text-[var(--muted)] hover:text-[var(--farmGreen)]">Products</Link>
+          <Link href="/about" className="text-sm text-[var(--muted)] hover:text-[var(--farmGreen)]">About</Link>
+          <Link href="/contact" className="text-sm text-[var(--muted)] hover:text-[var(--farmGreen)]">Contact</Link>
+          <Link href="/products" className="btn-primary shadow-soft">View Eggs</Link>
+        </div>
+
+        <div className="md:hidden">
+          <Link href="/products" className="btn-primary text-sm">View Eggs</Link>
         </div>
       </div>
     </nav>
