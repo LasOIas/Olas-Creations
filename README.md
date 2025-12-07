@@ -29,5 +29,7 @@ vercel login
 vercel
 ```
 
+- Note: During initial deployment we relaxed some pinned dependency versions and removed a custom `vercel.json` so Vercel can auto-detect Next.js. This resolved an `npm install` build error caused by unavailable package versions.
+
 # Adding products
 Edit `data/products.js` to add or modify products. Each product requires: `id`, `slug`, `name`, `description`, `price`, `unit`, `image`, `inStock`, and `category`.
