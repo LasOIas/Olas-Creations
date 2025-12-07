@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-gray-800 font-sans;
+}
+
+:root{
+  --farmGreen: #2f7a3e;
+  --farmBeige: #f6f0e6;
+  --farmBrown: #8b5e3c;
+}
+
+a { text-decoration: none }
