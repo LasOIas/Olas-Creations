@@ -1,5 +1,5 @@
-import { getProductBySlug } from '../../../../data/products'
-import ContactForm from '../../../../components/ContactForm'
+import { getProductBySlug } from '../../../data/products'
+import ContactForm from '../../../components/ContactForm'
 
 export default function ProductDetail({ params }){
   const { slug } = params
