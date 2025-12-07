@@ -6,7 +6,11 @@ export default function Nav() {
       <div className="container flex items-center justify-between py-4">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[url('https://images.unsplash.com/photo-1514539079130-25950c84f2d6?w=200&q=80&auto=format&fit=crop')] bg-cover bg-center shadow-sm" />
+            <div className="w-10 h-10 rounded-full bg-[var(--farmGreen)] flex items-center justify-center text-white shadow-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                <path d="M12 2C9.5 2 6 5 6 9s3.5 7 6 7 6-3 6-7-2.5-7-6-7z" fill="white" />
+              </svg>
+            </div>
             <div>
               <div className="text-lg font-semibold text-[var(--farmBrown)]">Olas Farm</div>
               <div className="text-xs text-[var(--muted)]">Fresh local eggs</div>
