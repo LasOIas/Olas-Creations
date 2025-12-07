@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,16 +8,46 @@ html, body, #__next {
   height: 100%;
 }
 
-body {
-  background-color: #ffffff;
-  color: #1f2937;
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-}
-
 :root{
   --farmGreen: #2f7a3e;
   --farmBeige: #f6f0e6;
   --farmBrown: #8b5e3c;
+  --muted: #6b7280;
+}
+
+/* Base typography and layout */
+body {
+  background: var(--farmBeige);
+  color: #042029;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.container {
+  max-width: 72rem; /* 1152px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 a { text-decoration: none }
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--farmGreen);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+
+.shadow-soft {
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
