@@ -20,35 +20,37 @@ export default function ContactForm({defaultProduct}){
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-3 max-w-lg">
+    <form onSubmit={handleSubmit} className="space-y-4 max-w-lg card p-6">
       <div>
         <label className="block text-sm">Name</label>
-        <input name="name" value={form.name} onChange={handleChange} className="w-full border rounded px-3 py-2" required />
+        <input name="name" value={form.name} onChange={handleChange} className="w-full field" required />
       </div>
       <div>
         <label className="block text-sm">Email</label>
-        <input name="email" type="email" value={form.email} onChange={handleChange} className="w-full border rounded px-3 py-2" required />
+        <input name="email" type="email" value={form.email} onChange={handleChange} className="w-full field" required />
       </div>
-      <div>
-        <label className="block text-sm">Phone (optional)</label>
-        <input name="phone" value={form.phone} onChange={handleChange} className="w-full border rounded px-3 py-2" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label className="block text-sm">Phone (optional)</label>
+          <input name="phone" value={form.phone} onChange={handleChange} className="w-full field" />
+        </div>
+        <div>
+          <label className="block text-sm">Quantity</label>
+          <input name="qty" type="number" min="1" value={form.qty} onChange={handleChange} className="w-full field" />
+        </div>
       </div>
       <div>
         <label className="block text-sm">Product</label>
-        <input name="product" value={form.product} onChange={handleChange} className="w-full border rounded px-3 py-2" placeholder="e.g. Farm Fresh Eggs — Dozen" />
-      </div>
-      <div>
-        <label className="block text-sm">Quantity</label>
-        <input name="qty" type="number" min="1" value={form.qty} onChange={handleChange} className="w-24 border rounded px-3 py-2" />
+        <input name="product" value={form.product} onChange={handleChange} className="w-full field" placeholder="e.g. Farm Fresh Eggs — Dozen" />
       </div>
       <div>
         <label className="block text-sm">Message</label>
-        <textarea name="message" value={form.message} onChange={handleChange} className="w-full border rounded px-3 py-2" rows="4" />
+        <textarea name="message" value={form.message} onChange={handleChange} className="w-full field" rows="4" />
       </div>
-      <div>
-        <button type="submit" className="bg-farmGreen text-white px-4 py-2 rounded">Send enquiry</button>
+      <div className="flex items-center gap-4">
+        <button type="submit" className="btn-primary">Send enquiry</button>
+        {status && <div className="text-sm text-green-700">{status}</div>}
       </div>
-      {status && <div className="text-sm text-green-700">{status}</div>}
     </form>
   )
 }
