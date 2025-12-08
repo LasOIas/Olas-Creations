@@ -39,9 +39,14 @@ export default function Nav() {
           <div className="relative" ref={menuRef}>
             <button onClick={()=>setOpen(v=>!v)} className="text-sm text-[var(--muted)] hover:text-[var(--brand-600)]">More ▾</button>
             {open && (
-              <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg border py-2">
+              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border py-2">
                 <Link href="/subscriptions" className="block px-4 py-2 text-sm text-[var(--text)] hover:bg-gray-50">Subscriptions</Link>
                 <Link href="/faq" className="block px-4 py-2 text-sm text-[var(--text)] hover:bg-gray-50">FAQ</Link>
+                <Link href="/delivery" className="block px-4 py-2 text-sm text-[var(--text)] hover:bg-gray-50">Delivery</Link>
+                <Link href="/reviews" className="block px-4 py-2 text-sm text-[var(--text)] hover:bg-gray-50">Reviews</Link>
+                <Link href="/gift-cards" className="block px-4 py-2 text-sm text-[var(--text)] hover:bg-gray-50">Gift Cards</Link>
+                <Link href="/wholesale" className="block px-4 py-2 text-sm text-[var(--text)] hover:bg-gray-50">Wholesale</Link>
+                <Link href="/policies" className="block px-4 py-2 text-sm text-[var(--text)] hover:bg-gray-50">Policies</Link>
               </div>
             )}
           </div>
@@ -68,6 +73,11 @@ export default function Nav() {
             <Link href="/products" className="py-2 text-sm">Products</Link>
             <Link href="/subscriptions" className="py-2 text-sm">Subscriptions</Link>
             <Link href="/faq" className="py-2 text-sm">FAQ</Link>
+            <Link href="/delivery" className="py-2 text-sm">Delivery</Link>
+            <Link href="/reviews" className="py-2 text-sm">Reviews</Link>
+            <Link href="/gift-cards" className="py-2 text-sm">Gift Cards</Link>
+            <Link href="/wholesale" className="py-2 text-sm">Wholesale</Link>
+            <Link href="/policies" className="py-2 text-sm">Policies</Link>
             <Link href="/about" className="py-2 text-sm">About</Link>
             <Link href="/contact" className="py-2 text-sm">Contact</Link>
           </div>
