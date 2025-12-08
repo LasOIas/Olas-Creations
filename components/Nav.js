@@ -12,7 +12,7 @@ export default function Nav() {
               </svg>
             </div>
             <div>
-              <div className="text-lg font-semibold text-[var(--farmBrown)]">Olas Farm</div>
+              <div className="text-lg font-semibold text-[var(--farmBrown)]">Olas Creations</div>
               <div className="text-xs text-[var(--muted)]">Fresh local eggs</div>
             </div>
           </Link>

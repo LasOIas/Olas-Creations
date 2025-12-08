@@ -1,7 +1,7 @@
 export default function About(){
   return (
     <div>
-      <h1 className="text-2xl font-bold text-farmBrown">About Olas Farm</h1>
+      <h1 className="text-2xl font-bold text-farmBrown">About Olas Creations</h1>
       <p className="mt-3 text-gray-700">We are a small family farm focused on humane, pasture-based care for our hens. We collect eggs daily and bring them straight to our neighbors. Our goal is simple: good food, responsibly produced.</p>
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="rounded overflow-hidden">

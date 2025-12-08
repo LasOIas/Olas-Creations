@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Products - Olas Farm'
+  title: 'Products - Olas Creations'
 }
 
 export default function ProductsLayout({children}){

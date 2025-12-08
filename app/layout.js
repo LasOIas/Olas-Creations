@@ -3,8 +3,8 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Olas Farm — Fresh Eggs',
-  description: 'Local farm selling fresh pasture-raised eggs. Pickup and local delivery available.'
+  title: 'Olas Creations — Fresh Eggs',
+  description: 'Local producer selling fresh pasture-raised eggs. Pickup and local delivery available.'
 }
 
 export default function RootLayout({children}){

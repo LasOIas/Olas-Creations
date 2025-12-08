@@ -1,4 +1,4 @@
-# Olas Farm Shop
+# Olas Creations
 
 A small Next.js (App Router) + Tailwind CSS site for selling farm fresh eggs, ready to deploy on Vercel.
 
