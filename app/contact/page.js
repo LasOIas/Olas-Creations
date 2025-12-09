@@ -2,7 +2,7 @@ import ContactForm from '../../components/ContactForm'
 
 export default function ContactPage(){
   return (
-    <div>
+    <div className="max-w-3xl w-full">
       <h1 className="text-2xl font-bold text-farmBrown">Contact / Order</h1>
       <p className="text-sm text-gray-600 mb-4">Use the form below to request an order or ask questions. We'll respond within 24 hours.</p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

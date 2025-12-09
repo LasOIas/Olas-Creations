@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-export default function ContactForm({defaultProduct}){
+export default function ContactForm({ defaultProduct }){
   const [form, setForm] = useState({name:'', email:'', phone:'', product: defaultProduct || '', qty:1, message:''})
   const [status, setStatus] = useState(null)
 
@@ -13,7 +13,6 @@ export default function ContactForm({defaultProduct}){
 
   function handleSubmit(e){
     e.preventDefault()
-    // For now, log to console. Later integrate backend/email service.
     console.log('Contact form submitted', form)
     setStatus('Thanks — your request was recorded. We will contact you shortly.')
     setForm({name:'', email:'', phone:'', product:'', qty:1, message:''})
