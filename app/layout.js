@@ -1,10 +1,8 @@
 import './globals.css'
 import Nav from '../components/Nav'
-import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Olas Creations — Fresh Eggs',
-  description: 'Local producer selling fresh pasture-raised eggs. Pickup and local delivery available.'
+  title: 'Farm Fresh Eggs',
 }
 
 export default function RootLayout({children}){
@@ -12,8 +10,7 @@ export default function RootLayout({children}){
     <html lang="en">
       <body>
         <Nav />
-        <main className="max-w-5xl mx-auto px-4 py-8">{children}</main>
-        <Footer />
+        <main className="min-h-screen flex items-center justify-center px-4 py-16">{children}</main>
       </body>
     </html>
   )
